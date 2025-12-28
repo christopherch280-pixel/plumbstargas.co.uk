@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <!-- Character encoding and viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags (SEO) -->
+    <title>PlumbStar Gas | Emergency Plumbing & Gas Services UK | 24/7 Support</title>
+    <meta name="description" content="Professional plumbing and gas services across the UK. Emergency repairs, installations, and maintenance. Available 24/7 with certified engineers. Fast response times, transparent pricing.">
+    <meta name="keywords" content="plumbing services UK, gas engineer, emergency plumber, boiler repair, central heating, pipe repair, plumbing maintenance">
+    <meta name="author" content="PlumbStar Gas">
+    <meta name="theme-color" content="#1e5a96">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Open Graph / Facebook Meta Tags (Social Media) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://plumbstargas.co.uk/">
+    <meta property="og:title" content="PlumbStar Gas | Emergency Plumbing & Gas Services UK">
+    <meta property="og:description" content="Professional 24/7 plumbing and gas services. Emergency repairs, installations, and maintenance by certified engineers.">
+    <meta property="og:image" content="https://plumbstargas.co.uk/og-image.jpg">
+    <meta property="og:image:alt" content="PlumbStar Gas - Professional Plumbing Services">
+    <meta property="og:locale" content="en_GB">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://plumbstargas.co.uk/">
+    <meta property="twitter:title" content="PlumbStar Gas | Emergency Plumbing & Gas Services UK">
+    <meta property="twitter:description" content="Professional 24/7 plumbing and gas services. Emergency repairs, installations, and maintenance.">
+    <meta property="twitter:image" content="https://plumbstargas.co.uk/twitter-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://plumbstargas.co.uk/">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts with font-display swap for performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <style>
+        :root {
+            /* Color Scheme - Professional Blue & White with Orange accents */
+            --primary-blue: #1e5a96;
+            --primary-dark: #0d3b5c;
+            --secondary-blue: #2b7cc4;
+            --accent-orange: #ff6b35;
+            --accent-orange-light: #ffb347;
+            --accent-orange-dark: #e55a2b;
+            --neutral-white: #ffffff;
+            --neutral-light: #f8f9fa;
+            --neutral-gray: #6c757d;
+            --neutral-dark: #212529;
+            --border-gray: #dee2e6;
+            --error-red: #dc3545;
+            --success-green: #28a745;
+            --warning-yellow: #ffc107;
+            
+            /* Typography */
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            
+            /* Transitions */
+            --transition-fast: 150ms ease-in-out;
+            --transition-base: 300ms ease-in-out;
+            --transition-slow: 500ms ease-in-out;
+            
+            /* Z-index */
+            --z-dropdown: 1000;
+            --z-sticky: 1020;
+            --z-fixed: 1030;
+            --z-modal-backdrop: 1040;
+            --z-modal: 1050;
+            --z-popover: 1060;
+            --z-tooltip: 1070;
+        }
+        
+        /* Reset and Base Styles */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--neutral-dark);
+            background-color: var(--neutral-white);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Typography */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-dark);
+        }
+        
+        h1 {
+            font-size: clamp(1.75rem, 5vw, 3.5rem);
+        }
+        
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+        }
+        
+        h3 {
+            font-size: clamp(1.25rem, 3vw, 2rem);
+        }
+        
+        p {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        a {
+            color: var(--secondary-blue);
+            text-decoration: none;
+            transition: color var(--transition-base);
+        }
+        
+        a:hover {
+            color: var(--accent-orange);
+            text-decoration: underline;
+        }
+        
+        a:focus {
+            outline: 2px solid var(--accent-orange);
+            outline-offset: 2px;
+        }
+        
+        /* Skip to main content link */
+        .skip-to-main {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background-color: var(--primary-blue);
+            color: var(--neutral-white);
+            padding: var(--spacing-sm);
+            text-decoration: none;
+            z-index: var(--z-modal);
+        }
+        
+        .skip-to-main:focus {
+            top: 0;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
+            color: var(--neutral-white);
+            padding: var(--spacing-lg) var(--spacing-md);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: var(--z-sticky);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+        }
+        
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+        
+        .logo::before {
+            content: '🔧';
+            font-size: 1.8rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: var(--spacing-lg);
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--neutral-white);
+            font-weight: 500;
+            transition: color var(--transition-base);
+        }
+        
+        nav a:hover {
+            color: var(--accent-orange);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--neutral-white);
+            padding: var(--spacing-2xl) var(--spacing-md);
+            text-align: center;
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            color: var(--neutral-white);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-lg);
+            color: rgba(255, 255, 255, 0.95);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: var(--spacing-lg);
+        }
+        
+        .btn {
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent-orange);
+            color: var(--neutral-white);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--accent-orange-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--neutral-white);
+            border: 2px solid var(--neutral-white);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--neutral-white);
+            color: var(--primary-blue);
+            transform: translateY(-2px);
+        }
+        
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-2xl) var(--spacing-md);
+        }
+        
+        /* Services Section */
+        .services {
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .service-card {
+            background: var(--neutral-light);
+            padding: var(--spacing-lg);
+            border-radius: 8px;
+            transition: all var(--transition-base);
+            border-left: 4px solid var(--accent-orange);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(30, 90, 150, 0.15);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .service-card h3 {
+            color: var(--primary-blue);
+        }
+        
+        /* Features Section */
+        .features {
+            background-color: var(--neutral-light);
+            padding: var(--spacing-2xl) var(--spacing-md);
+            margin: var(--spacing-2xl) 0;
+        }
+        
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .feature-item {
+            text-align: center;
+        }
+        
+        .feature-number {
+            font-size: 2rem;
+            color: var(--accent-orange);
+            font-weight: 700;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: var(--primary-blue);
+            color: var(--neutral-white);
+            padding: var(--spacing-2xl) var(--spacing-md);
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contact h2 {
+            color: var(--neutral-white);
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .contact-item {
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: flex-start;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-item p {
+            margin: 0;
+        }
+        
+        .contact-item a {
+            color: var(--accent-orange-light);
+        }
+        
+        .contact-item a:hover {
+            color: var(--neutral-white);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--neutral-white);
+            padding: var(--spacing-lg) var(--spacing-md);
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--accent-orange-light);
+        }
+        
+        footer a:hover {
+            color: var(--neutral-white);
+        }
+        
+        /* Accessibility */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        
+        /* Focus visible for keyboard navigation */
+        :focus-visible {
+            outline: 2px solid var(--accent-orange);
+            outline-offset: 2px;
+        }
+        
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: var(--spacing-md);
+                width: 100%;
+                order: 3;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            :root {
+                font-size: 14px;
+            }
+            
+            header {
+                padding: var(--spacing-md);
+            }
+            
+            .hero {
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+            
+            main {
+                padding: var(--spacing-lg) var(--spacing-md);
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background: var(--neutral-white);
+            }
+            
+            header,
+            footer,
+            .cta-buttons {
+                display: none;
+            }
+            
+            a {
+                text-decoration: underline;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content link for keyboard navigation -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Header Navigation -->
+    <header role="banner">
+        <div class="header-container">
+            <div class="logo" aria-label="PlumbStar Gas - Home">
+                PlumbStar Gas
+            </div>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Why Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-container">
+            <h1 id="hero-heading">Professional Plumbing & Gas Services</h1>
+            <p class="hero-subtitle">24/7 Emergency Response • Certified Engineers • Transparent Pricing</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="handleEmergencyCall()">
+                    📞 Call Emergency Hotline
+                </button>
+                <button class="btn btn-secondary" onclick="handleQuoteRequest()">
+                    📋 Get Free Quote
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Services Section -->
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🚰</div>
+                    <h3>Emergency Plumbing</h3>
+                    <p>Burst pipes, leaks, and blockages fixed fast. Available 24/7 for urgent repairs with rapid response times across the UK.</p>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🔥</div>
+                    <h3>Gas Services</h3>
+                    <p>Gas safety inspections, boiler repairs, and installations. All engineers Gas Safe registered with full certifications.</p>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🌡️</div>
+                    <h3>Central Heating</h3>
+                    <p>Installation, maintenance, and repair of central heating systems. Efficient solutions to keep your home warm year-round.</p>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🔧</div>
+                    <h3>Maintenance</h3>
+                    <p>Regular maintenance programs to prevent costly repairs. Preventative care keeps your systems running efficiently.</p>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🚿</div>
+                    <h3>Bathroom Installations</h3>
+                    <p>Complete bathroom renovations and plumbing work. Modern, stylish installations by experienced professionals.</p>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">💧</div>
+                    <h3>Water Systems</h3>
+                    <p>Water heater installation, repair, and optimization. Reliable hot water solutions for residential and commercial properties.</p>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Features Section -->
+        <section id="features" class="features" aria-labelledby="features-heading">
+            <div class="features-container">
+                <h2 id="features-heading">Why Choose PlumbStar Gas?</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-number">24/7</div>
+                        <p>Always available for emergencies and urgent repairs when you need us most.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">500+</div>
+                        <p>Happy customers served across the United Kingdom with consistent quality service.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">15 min</div>
+                        <p>Average response time in urban areas. Quick assessment and repair solutions.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">100%</div>
+                        <p>Gas Safe and CIPHE registered. All work guaranteed and fully insured.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <div class="contact-container">
+            <h2 id="contact-heading">Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon" aria-hidden="true">📞</div>
+                    <div>
+                        <h3 style="margin: 0 0 0.5rem 0; color: var(--neutral-white);">Emergency Hotline</h3>
+                        <p>
+                            <a href="tel:+441234567890">+44 (0) 123 456 7890</a>
+                        </p>
+                        <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);">Available 24/7</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon" aria-hidden="true">📧</div>
+                    <div>
+                        <h3 style="margin: 0 0 0.5rem 0; color: var(--neutral-white);">Email</h3>
+                        <p>
+                            <a href="mailto:info@plumbstargas.co.uk">info@plumbstargas.co.uk</a>
+                        </p>
+                        <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);">We'll respond within 1 hour</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon" aria-hidden="true">📍</div>
+                    <div>
+                        <h3 style="margin: 0 0 0.5rem 0; color: var(--neutral-white);">Service Area</h3>
+                        <p>UK-Wide Coverage</p>
+                        <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);">Home and commercial properties</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div>
+            <p>&copy; 2025 PlumbStar Gas. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+            <p style="font-size: 0.9rem; margin-top: var(--spacing-md); color: rgba(255, 255, 255, 0.8);">
+                Gas Safe Registered • CIPHE Certified • Fully Insured
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Structured Data for SEO (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "PlumbStar Gas",
+        "description": "Professional plumbing and gas services across the UK. Emergency repairs, installations, and maintenance. Available 24/7.",
+        "url": "https://plumbstargas.co.uk",
+        "telephone": "+441234567890",
+        "email": "info@plumbstargas.co.uk",
+        "areaServed": "GB",
+        "priceRange": "$$",
+        "image": "https://plumbstargas.co.uk/og-image.jpg",
+        "sameAs": [
+            "https://www.facebook.com/plumbstargas",
+            "https://www.twitter.com/plumbstargas",
+            "https://www.instagram.com/plumbstargas"
+        ],
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "GB",
+            "addressRegion": "United Kingdom"
+        }
+    }
+    </script>
+    
+    <!-- Scripts -->
+    <script>
+        // Event handlers for CTA buttons
+        function handleEmergencyCall() {
+            // In production, replace with actual phone number
+            window.location.href = 'tel:+441234567890';
+        }
+        
+        function handleQuoteRequest() {
+            // Scroll to contact section or open modal
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+        // Performance optimization - lazy load images if needed
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img.lazy').forEach(img => imageObserver.observe(img));
+        }
+        
+        // Smooth scroll polyfill for older browsers
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target && !('scrollBehavior' in document.documentElement.style)) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        
+        // Track page views and events for analytics (optional)
+        function trackEvent(eventName, eventData = {}) {
+            if (window.gtag) {
+                gtag('event', eventName, eventData);
+            }
+        }
+        
+        // Example: Track emergency call button click
+        document.querySelectorAll('button[onclick*="handleEmergencyCall"]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                trackEvent('emergency_call_clicked', {
+                    'event_category': 'engagement',
+                    'event_label': 'emergency_button'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
